@@ -1,0 +1,65 @@
+.shopbarImage1 {
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
+    url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/female_1_eg7kez.png);
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.shopbarImage3 {
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
+    url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/schoolbag_zhytkd.png);
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  color: #fff;
+}
+.shopbarImage2 {
+  background: linear-gradient(rgba(54, 68, 199, 0.45), rgba(0, 38, 255, 0.45)),
+    url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/sweatshirt_pycpbg.png);
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  color: #fff;
+}
+
+.shopperheader::after {
+  content: "From $50";
+  display: block;
+  font-size: large;
+  position: relative;
+  bottom: 1px;
+}
+.shopperheader1::after {
+  content: "From $50";
+  display: block;
+  font-size: large;
+  position: relative;
+  bottom: 1px;
+}
+.shopperheader3::after {
+  content: "From $50";
+  display: block;
+  font-size: large;
+  position: relative;
+  bottom: 1px;
+}
