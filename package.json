@@ -9,11 +9,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-<<<<<<< HEAD
     "clsx": "^1.1.1",
-=======
     "bootstrap": "^4.6.0",
->>>>>>> d758be342162da6c7905dc0c8b59f426f09d5b4b
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.2",
