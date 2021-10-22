@@ -1,0 +1,51 @@
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.productDesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  display: block;
+  font-size: 27px;
+  font-weight: 700;
+}
+.productName:first-child {
+  margin-bottom: 4px;
+}
+.prodNameContainer {
+  margin-bottom: 18px;
+}
+.productStyle {
+  color: #D1D0DA;
+  font-weight: 600;
+}
+
+.productPrice {
+  font-size: 30px;
+  color: #7A6CA5;
+  font-weight: 700;
+}
+.colorSection {
+  display: flex;
+  flex-direction: column;
+  width: 40vh
+}
+.colorHeading {
+  margin-bottom: 18px
+}
+.color {
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+

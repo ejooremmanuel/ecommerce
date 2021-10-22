@@ -1,0 +1,14 @@
+.textAndIcon {
+  display: flex
+}
+.icon {
+  margin-right: 20px;
+  align-self: flex-start;
+  margin-top: -2px;
+}
+.icon:hover {
+  color: red;
+}
+.text {
+  align-self: flext-start
+}

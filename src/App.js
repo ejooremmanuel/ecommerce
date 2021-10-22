@@ -1,7 +1,12 @@
+import Checkout from "./checkout/Checkout";
+import SingleProduct from "./single-product/SingleProduct";
+
 function App() {
   return (
     <div>
-      <h1>Ready!</h1>
+      <SingleProduct />
+      {/* <Checkout />
+      <Checkout /> */}
     </div>
   );
 }

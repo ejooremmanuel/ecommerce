@@ -1,0 +1,12 @@
+.topRight {
+margin-top: 20px;
+display: inline;
+float: right;
+}
+.middleIcon {
+  margin: 0 22px;
+}
+.icon {
+  font-weight: 100;
+  font-size: 50px;
+}

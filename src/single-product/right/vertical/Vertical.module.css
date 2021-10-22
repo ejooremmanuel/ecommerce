@@ -1,0 +1,8 @@
+.root {}
+.vl {
+  border-left: 3px solid black;
+  height: 100px;
+}
+.threeDots {
+  margin-left: -11px;
+}
