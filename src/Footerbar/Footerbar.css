@@ -1,0 +1,7 @@
+.FooterContainer {
+  width: 100vw;
+  height: 200px;
+  background-color: rgb(5, 5, 32);
+  display: flex;
+  margin-top: 40px;
+}
