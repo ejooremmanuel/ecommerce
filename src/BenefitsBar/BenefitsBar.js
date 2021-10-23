@@ -7,7 +7,7 @@ import "./BenefitsBar.css";
 
 const BenefitsBar = () => {
   return (
-    <div style={{ display: "flex", width: "805px" }}>
+    <div className="benefitsContainer">
       <div className="Benefitscard1">
         <table>
           <tr>
@@ -29,7 +29,7 @@ const BenefitsBar = () => {
           </tr>
         </table>
       </div>
-      <div className="Benefitscard1">
+      <div className="Benefitscard2">
         <table>
           <tr>
             <Segment
@@ -50,7 +50,7 @@ const BenefitsBar = () => {
           </tr>
         </table>
       </div>
-      <div className="Benefitscard1">
+      <div className="Benefitscard3">
         <table>
           <tr>
             <Segment

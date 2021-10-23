@@ -4,7 +4,7 @@ import "./ShopBar.css";
 
 const ShopBar = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div className="shopbarContainer">
       <div className="shopbarImage1">
         <table>
           <tr>

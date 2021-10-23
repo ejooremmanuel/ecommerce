@@ -45,15 +45,7 @@ const BannerDisplay = () => {
           </tr>
           <tr>
             <td>
-              <Button
-                style={{
-                  backgroundColor: "red",
-                  color: "white",
-                  marginTop: "10px",
-                }}
-              >
-                Shop Now
-              </Button>
+              <Button className="red mt-3">Shop Now</Button>
             </td>
           </tr>
         </table>

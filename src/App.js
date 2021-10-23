@@ -18,6 +18,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-around",
+        width: "100vw",
       }}
     >
       <MenuBar />
