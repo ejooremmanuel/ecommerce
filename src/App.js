@@ -22,7 +22,6 @@ function App() {
       }}
     >
       <MenuBar />
-      <SubMenuBar />
       <Banner />
       <ShopBar />
       <Benefits />

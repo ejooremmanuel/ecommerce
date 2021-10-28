@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import "./SubMenu.css";
 
 const SubMenuBar = () => {
   return (
@@ -7,7 +8,7 @@ const SubMenuBar = () => {
       <Navbar
         bg="light"
         expand="lg"
-        className="fixed-top"
+        className="fixed-top navbar-container-sub"
         style={{ margin: "60px 0", padding: "10px 280px" }}
       >
         <Navbar.Brand href="#home">All Category</Navbar.Brand>
