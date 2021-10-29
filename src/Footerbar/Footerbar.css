@@ -133,11 +133,10 @@
   }
 
   .FooterContainer {
-    width: 80vw;
     height: 40vh;
     background-color: rgb(5, 5, 32);
     display: flex;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     flex-direction: column;
     align-self: center;
     justify-self: center;
