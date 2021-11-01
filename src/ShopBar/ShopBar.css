@@ -1,17 +1,17 @@
 .shopbarContainer {
   display: grid;
   grid-template-areas: "item1 item2 item3";
-  width: 800px;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .shopbarImage1 {
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
     url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/female_1_eg7kez.png);
-  width: 250px;
+  width: 280px;
   height: 250px;
   grid-area: item1;
   background-position: center;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,10 +32,9 @@
 .shopbarImage3 {
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
     url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/schoolbag_zhytkd.png);
-  width: 250px;
+  width: 280px;
   height: 250px;
   grid-area: item2;
-  margin: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -56,16 +55,24 @@
 .shopbarImage2 {
   background: linear-gradient(rgba(54, 68, 199, 0.45), rgba(0, 38, 255, 0.45)),
     url(https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/sweatshirt_pycpbg.png);
-  width: 250px;
+  width: 280px;
   height: 250px;
   grid-area: item3;
-  margin: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: contain;
+  color: #fff;
+}
+.shopbarImage1 a:hover {
+  color: #fff;
+}
+.shopbarImage2 a:hover {
+  color: #fff;
+}
+.shopbarImage3 a:hover {
   color: #fff;
 }
 
@@ -99,17 +106,39 @@
   bottom: 1px;
 }
 
+@media screen and (max-width: 500px) {
+  .shopbarContainer {
+    display: grid;
+    grid-template-areas: "item1 item2 item3";
+    width: 100%;
+    gap: 2em;
+    overflow-x: scroll;
+  }
+}
 @media screen and (max-width: 768px) {
   .shopbarContainer {
     display: grid;
-    grid-template-areas: "item1" "item2" "item3";
-    justify-content: center;
+    grid-template-areas: "item1 item2 item3";
+    width: 100%;
+    gap: 2em;
+    overflow-x: scroll;
   }
 }
 @media screen and (max-width: 900px) {
   .shopbarContainer {
     display: grid;
-    grid-template-areas: "item1" "item2" "item3";
-    justify-content: center;
+    grid-template-areas: "item1 item2 item3";
+    width: 100%;
+    overflow-x: scroll;
+    gap: 2em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .shopbarContainer {
+    display: grid;
+    grid-template-areas: "item1 item2 item3";
+    width: 100%;
+    overflow-x: scroll;
+    gap: 2em;
   }
 }

@@ -1,8 +1,5 @@
 import React from "react";
 import "./posts.css";
-import FirstPost from '../../img/first__post.png';
-import SecondPost from '../../img/second__post.png';
-import ThirdPost from '../../img/third__post.png';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import TimerIcon from '@material-ui/icons/Timer';
 
