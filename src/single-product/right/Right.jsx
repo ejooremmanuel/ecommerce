@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import Ratings from "./ratings/Ratings";
 import classes from "./Right.module.css";
-import AddQty from "./quantity/AddQty"
-import Favourite from "./favourite/Favourite"
-import Vertical from "./vertical/Vertical"
-
+import AddQty from "./quantity/AddQty";
+import Favourite from "./favourite/Favourite";
+import Vertical from "./vertical/Vertical";
 import Colors from "./colors/Colors";
+import { CartContext } from "../../context/CartContext";
 
 const Right = () => {
+  const { title, productPrice } = useContext(CartContext);
   return (
     <div className={classes.rightContainer}>
       <div className={classes.right}>
         <div className={classes.productDesc}>
           <Ratings className={classes.ratings} />
           <div className={classes.prodNameContainer}>
-            <span className={classes.productName}>Bag C De Cartier</span>
+            <span className={classes.productName}>{title}</span>
             <span className={classes.productName}>Small Model</span>
           </div>
           <div className={classes.productStyle}>Style# L1001997</div>
         </div>
         <div className={classes.productPrice}>
-          <span>&#x24;&nbsp;2449.17</span>
+          <span>&nbsp;{productPrice}</span>
         </div>
         <div className={classes.colorSection}>
           <h4 className={classes.colorHeading}>Colors</h4>
@@ -34,7 +35,9 @@ const Right = () => {
         <AddQty />
         <Favourite />
       </div>
-      <div><Vertical /></div>
+      <div>
+        <Vertical />
+      </div>
     </div>
   );
 };
