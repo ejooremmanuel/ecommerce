@@ -21,7 +21,6 @@ const Checkout = () => {
       >
         <ProductCard />
       </div>
-      <div>Total</div>
     </Wrapper>
   );
 };
