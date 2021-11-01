@@ -1,15 +1,29 @@
-import React from 'react'
-import ProductCard from './product-card/ProductCard';
-
-import classes from './Checkout.module.css'
-
+import React from "react";
+import ProductCard from "./product-card/ProductCard";
+import Wrapper from "../Landing/Landing";
+import classes from "./Checkout.module.css";
 
 const Checkout = () => {
   return (
-    <div className={classes.root}>
-      <ProductCard />
-    </div>
-  )
-}
+    <Wrapper>
+      <div
+        className={classes.root}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          // overflowY: "scroll",
+          // height: "70vh",
+          // marginTop: "65px",
+          paddingTop: "60px",
+        }}
+      >
+        <ProductCard />
+      </div>
+      <div>Total</div>
+    </Wrapper>
+  );
+};
 
-export default Checkout
+export default Checkout;

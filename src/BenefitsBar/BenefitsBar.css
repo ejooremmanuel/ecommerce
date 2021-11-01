@@ -1,8 +1,86 @@
+.benefitsContainer {
+  display: grid;
+  grid-template-areas: "benefit1 benefit2 benefit3";
+  width: 80%;
+  margin: 30px auto;
+}
+
 .Benefitscard1 {
   display: flex;
+  grid-area: benefit1;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-style: italic;
-  margin: 10px;
+}
+.Benefitscard1:hover {
+  box-shadow: 1px 2px 8px 1px rgba(223, 192, 192, 0.6);
+  cursor: pointer;
+}
+.Benefitscard2 {
+  display: flex;
+  grid-area: benefit2;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+.Benefitscard2:hover {
+  box-shadow: 1px 2px 8px 1px rgba(223, 192, 192, 0.6);
+  cursor: pointer;
+}
+.Benefitscard3 {
+  display: flex;
+  grid-area: benefit3;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.Benefitscard3:hover {
+  box-shadow: 1px 2px 8px 1px rgba(223, 192, 192, 0.6);
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  from {
+    overflow-x: 0;
+  }
+
+  to {
+    overflow-x: 100;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .benefitsContainer {
+    display: grid;
+    grid-template-areas: "benefit1 benefit2 benefit3";
+    overflow-x: scroll;
+    width: 100%;
+    gap: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefitsContainer {
+    display: grid;
+    grid-template-areas: "benefit1 benefit2 benefit3";
+    overflow-x: scroll;
+    width: 100%;
+    gap: 2em;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .benefitsContainer {
+    display: grid;
+    grid-template-areas: "benefit1 benefit2 benefit3";
+    overflow-x: scroll;
+    width: 100%;
+    gap: 2em;
+  }
 }
