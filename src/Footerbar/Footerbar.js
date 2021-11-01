@@ -7,7 +7,7 @@ const Footerbar = () => {
       <div className="subContainer">
         <div className="footer__text">
           <div className="footer__text__second">
-            <h4>BuySell</h4>
+            <h4>Buy::Sell</h4>
             <br />
             <span>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
