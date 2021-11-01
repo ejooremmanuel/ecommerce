@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useContext } from "react";
 import Me from "../img/sneakers.png";
 import Me2 from "../img/Handbag.png";
@@ -272,6 +273,69 @@ const Weekly = () => {
             </div>
             </Link>
 
+=======
+import React,{useContext} from 'react';
+import { Container } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
+import './Weekly.css'
+
+
+const Weekly = () => {
+   const {setTitle, setProductImage, setProductPrice } = useContext (CartContext)
+    return (
+       <Container>
+        <div>
+           <h3 className ="weekly">Weekly Best Deals</h3>
+           <div className="container">
+
+              <Link to="/cart">
+              <div className="shop-1" onClick={()=>{
+                 setTitle("Ladies Shoes")
+                 setProductPrice(15)
+                 setProductImage("https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/female_1_eg7kez.png");
+              }}>
+                  <div className="img__container">
+                  <img src="https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/female_1_eg7kez.png" alt="shoe pic" className="intro__img"/>   
+                  </div>
+               <h5 className="Productname2">Ladies Shoe</h5>
+               <div className = "downpart">
+               <div className="firstprice">$20.00</div> 
+               <div className="cancelledprice">$15.00</div>
+               </div>
+               <div className = "lastpart">
+               <h5 className="sold">Sold:29</h5> 
+               <h5 className="available">Available:12</h5>
+               </div>
+               {/* <div className="circle">
+                  <p>10% <br/><strong>Off</strong></p>
+                </div> */}
+               </div>
+
+                 </Link>
+
+            <Link to= "/cart">
+            <div className="shop-1" onClick ={()=>{
+               setTitle("Sweather")
+               setProductPrice(40)
+               setProductImage("https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/sweatshirt_pycpbg.png")
+            }}>
+            <div className="img__container">
+            <img src="https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/sweatshirt_pycpbg.png" alt="schoolbag pic" className="intro__img"/>
+            </div>
+            <h5 className="Productname2">Sweather</h5>
+            <div className = "downpart">
+            <div  className="firstprice">$60.00</div> 
+            <div className="cancelledprice">$40.00</div>
+            </div>
+            <div className = "lastpart">
+            <h5 className="sold">Sold:29</h5> 
+            <h5 className="available">Available:12</h5>
+            </div>
+            </div>
+            </Link>
+
+>>>>>>> 92a02d84196edcfac20e82e5c8fa3e7b0f7213fd
             <Link to ="/cart"> 
             <div className="shop-1" onClick= {()=>{
                setTitle("White schoolbag")
@@ -380,5 +444,8 @@ const Weekly = () => {
 }
 
 export default Weekly; 
+<<<<<<< HEAD
+>>>>>>> 92a02d84196edcfac20e82e5c8fa3e7b0f7213fd
+=======
 >>>>>>> 92a02d84196edcfac20e82e5c8fa3e7b0f7213fd
 
