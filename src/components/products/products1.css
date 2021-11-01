@@ -70,7 +70,7 @@ img {
 
 .image{
     width: 250px;
-    height: 300px;
+    height: 200px;
     justify-content: center;
 }
 
@@ -83,7 +83,7 @@ img {
 
 .img1{
     width: 250px;
-    height: 700px;
+    height: 550px;
 }
 
 .img1:hover{
@@ -114,16 +114,16 @@ img {
     text-indent: 70px;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1033px) {
     .product-container{
         grid-template-areas: "item1 item2"
-                        "item1 item4"
-                        "item3 item5";
+                            "item1 item4"
+                            "item3 item5";
     }
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 751px) {
     .product-container{
         grid-template-areas:    "item1"
                                 "item2"

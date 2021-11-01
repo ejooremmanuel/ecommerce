@@ -16,9 +16,7 @@ const Right = () => {
           <Ratings className={classes.ratings} />
           <div className={classes.prodNameContainer}>
             <span className={classes.productName}>{title}</span>
-            <span className={classes.productName}>Small Model</span>
           </div>
-          <div className={classes.productStyle}>Style# L1001997</div>
         </div>
         <div className={classes.productPrice}>
           <span>&nbsp;{productPrice}</span>
