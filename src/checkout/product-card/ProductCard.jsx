@@ -4,7 +4,7 @@ import img from "../../assets/img/bag.png";
 import { CartContext } from "../../context/CartContext";
 import Empty from "./Empty";
 const ProductCard = () => {
-  const { CartItems } = useContext(CartContext);
+  const { CartItems, total } = useContext(CartContext);
   const renderedItems = CartItems.map(
     ({ title, productPrice, productImage }) => {
       return (
@@ -32,7 +32,32 @@ const ProductCard = () => {
       );
     }
   );
-  return <>{CartItems.length > 1 ? renderedItems : <Empty />}</>;
+  return (
+    <>
+      {CartItems.length > 1 ? (
+        <div>
+          {renderedItems}
+          <div
+            style={{
+              padding: "10px 50px",
+            }}
+          >
+            <h4
+              style={{
+                color: "rgb(5, 5, 32)",
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
+              Total $ {total}
+            </h4>
+          </div>
+        </div>
+      ) : (
+        <Empty />
+      )}
+    </>
+  );
 };
 
 export default ProductCard;
