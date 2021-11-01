@@ -1,4 +1,6 @@
 import { AccountCircleOutlined, Menu, ShoppingCart } from "@material-ui/icons";
+import Badge from "@mui/material/Badge";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import React, { useState } from "react";
 import { Input, Icon } from "semantic-ui-react";
 import "./Menubar.css";
@@ -31,8 +33,17 @@ const MenuBar = () => {
           </form>
         </div>
         <div className="container-navbar-icons">
-          <AccountCircleOutlined />
-          <ShoppingCart />
+          <Badge
+            badgeContent={1}
+            sx={{
+              color: "white",
+            }}
+          >
+            <FavoriteBorderIcon />
+          </Badge>
+          <Badge badgeContent={1}>
+            <ShoppingCart />
+          </Badge>
         </div>
       </div>
     </div>
