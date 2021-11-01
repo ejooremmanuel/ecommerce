@@ -11,6 +11,7 @@ import { UserContext } from "./context/UserContext";
 import { CartContext } from "./context/CartContext";
 import Cart from "./single-product/SingleProduct";
 import CheckOut from "./checkout/Checkout";
+import Product from "./components/weeklybestdeals/Weekly.jsx"
 function App() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -63,6 +64,7 @@ function App() {
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/cart" component={Cart} />
             <Route exact path="/checkout" component={CheckOut} />
+            <Route exact path="/product" component={Product} />
           </Switch>
         </Router>
       </UserContext.Provider>
