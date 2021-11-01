@@ -27,30 +27,38 @@ const ProductCard = () => {
     }
   );
   return (
-    <>
-      {CartItems.length > 1 ? (
-        <div>
-          {renderedItems}
-          <div
-            style={{
-              padding: "10px 50px",
-            }}
-          >
-            <h4
-              style={{
-                color: "rgb(5, 5, 32)",
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              Total $ {total}
-            </h4>
-          </div>
+    <div className={classes.card}>
+      <div className={classes.productImgCon}>
+        <img src={img} alt="Product" />
+      </div>
+      <div className={classes.produtDesc}>
+        <h3 className={classes.productDescHeader}>QUALITY BAG WITH CLASS</h3>
+        <p className={classes.productDescText}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          molestias id autem veritatis accusamus aspernatur in nihil! Magni,
+          illo reiciendis!
+        </p>
+      </div>
+      <div className={classes.price}>
+        <span className={classes.priceCurrency}>&#x24;</span>{" "}
+        <span className={classes.priceAmount}>10.2</span>
+      </div>
+      <div className={classes.addButton}>
+        <div className={classes.firstButton}>
+          <span className={`${classes.firstButtonItem} ${classes.plus}`}>
+            +
+          </span>
+          <span className={classes.firstButtonItem}>01</span>
+          <span className={`${classes.firstButtonItem} ${classes.minus}`}>
+            -
+          </span>
         </div>
-      ) : (
-        <Empty />
-      )}
-    </>
+        <div className={classes.secondButton}>
+          <span>&#10006;</span>
+        </div>
+      </div>
+      <hr />
+    </div>
   );
 };
 

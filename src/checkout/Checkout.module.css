@@ -1,4 +1,19 @@
 .root {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productsCon {
+  padding-top: 150px;
+  flex: 2;
+}
+.sectionHeader {
+  font-weight: 900;
+  margin-bottom: 50px;
+  margin-left: 5%;
+}
+.checkoutCon {
+  flex: 1;
 }
