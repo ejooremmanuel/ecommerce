@@ -31,7 +31,7 @@ export default function Register() {
     const user = { email, password, firstName, lastName };
     setNewm(true);
     try {
-      const res = await axios.post("http://localhost:4000/user/register", user);
+      const res = await axios.post("https://ecommercebyejoor.herokuapp.com/user/register", user);
       setSuccess(res.data.msg);
       setError("");
       setTimeout(() => {

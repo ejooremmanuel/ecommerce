@@ -1,16 +1,14 @@
 .card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .productImgAndDesc {
-  border: 1px solid red;
   display: flex;
   align-items: center;
 }
 .productPriceAndButton {
   display: flex;
-  border: 1px solid green;
+  flex-direction: column;
 }
 /* .productDescHeader {
   display: inline;

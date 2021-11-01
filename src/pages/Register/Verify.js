@@ -28,7 +28,10 @@ export default function Verify() {
     setNewm(true);
     const user = { token };
     try {
-      const res = await axios.post("http://localhost:4000/user/verify", user);
+      const res = await axios.post(
+        "https://ecommercebyejoor.herokuapp.com/user/verify",
+        user
+      );
       setSuccess(res.data.msg);
       setError("");
       setTimeout(() => {

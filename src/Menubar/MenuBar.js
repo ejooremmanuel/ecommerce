@@ -1,12 +1,12 @@
-import { AccountCircle, Menu, ShoppingCart } from "@material-ui/icons";
+import { AccountCircle, Menu } from "@material-ui/icons";
 import React, { useState } from "react";
 import { Input, Icon } from "semantic-ui-react";
 import "./Menubar.css";
 import { Link } from "react-router-dom";
+import CartIcon from "./ShoppingCartIcon";
 const MenuBar = () => {
   const [show, setShow] = useState(true);
   const [menu, setMenu] = useState(true);
-
   const user = JSON.parse(localStorage.getItem("user"));
 
   return (
@@ -69,7 +69,7 @@ const MenuBar = () => {
                 </Link>
                 <Link
                   className="link-submenu"
-                  to="/user/logout"
+                  to="/"
                   onClick={() => {
                     localStorage.clear();
                     setMenu(!menu);
@@ -98,7 +98,9 @@ const MenuBar = () => {
               </div>
             </>
           )}
-          <ShoppingCart className="nav-icons" />
+          <Link to="/checkout">
+            <CartIcon />
+          </Link>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ export default function Login() {
     console.log(email, password);
     dispatch({ type: "LOGIN_START" });
     try {
-      let res = await axios.post("http://localhost:4000/user/login", newuser);
+      let res = await axios.post("https://ecommercebyejoor.herokuapp.com/user/login", newuser);
       if (res.data.success);
       setSuccess(res.data.msg);
       setError("");
