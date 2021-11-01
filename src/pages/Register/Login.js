@@ -39,10 +39,12 @@ export default function Login() {
     e.preventDefault();
     const newuser = { email, password };
     setNewm(true);
-    console.log(email, password);
     dispatch({ type: "LOGIN_START" });
     try {
-      let res = await axios.post("https://ecommercebyejoor.herokuapp.com/user/login", newuser);
+      let res = await axios.post(
+        "https://ecommercebyejoor.herokuapp.com/user/login",
+        newuser
+      );
       if (res.data.success);
       setSuccess(res.data.msg);
       setError("");

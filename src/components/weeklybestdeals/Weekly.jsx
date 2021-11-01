@@ -20,7 +20,7 @@ const Weekly = () => {
               className="shop-1"
               onClick={() => {
                 setTitle("Ladies Shoes");
-                setProductPrice("$20.00");
+                setProductPrice(20);
                 setProductImage(
                   "https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/female_1_eg7kez.png"
                 );
@@ -53,7 +53,7 @@ const Weekly = () => {
               className="shop-1"
               onClick={() => {
                 setTitle("Sweat Shirt");
-                setProductPrice("$20.00");
+                setProductPrice(20);
                 setProductImage(
                   "https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/sweatshirt_pycpbg.png"
                 );
@@ -82,8 +82,8 @@ const Weekly = () => {
             <div
               className="shop-1"
               onClick={() => {
-                setTitle("Product Name");
-                setProductPrice("$20.00");
+                setTitle("School Bag");
+                setProductPrice(20);
                 setProductImage(
                   "https://res.cloudinary.com/ejooremmanuel/image/upload/v1634547848/schoolbag_zhytkd.png"
                 );
@@ -96,7 +96,7 @@ const Weekly = () => {
                   className="intro__img"
                 />
               </div>
-              <h5 className="Productname2">Product Name</h5>
+              <h5 className="Productname2">School Bag</h5>
               <div className="downpart">
                 <div className="firstprice">$20.00</div>
                 <div className="cancelledprice">$15.00</div>
@@ -116,7 +116,7 @@ const Weekly = () => {
               className="shop-1"
               onClick={() => {
                 setTitle("Product Name");
-                setProductPrice("$20.00");
+                setProductPrice(20);
                 setProductImage({ Me });
               }}
             >
@@ -143,7 +143,7 @@ const Weekly = () => {
               className="shop-1"
               onClick={() => {
                 setTitle("Product Name");
-                setProductPrice("$20.00");
+                setProductPrice(20);
                 setProductImage({ Me2 });
               }}
             >
@@ -170,7 +170,7 @@ const Weekly = () => {
               className="shop-1"
               onClick={() => {
                 setTitle("Product Name");
-                setProductPrice("$20.00");
+                setProductPrice(20);
                 setProductImage({ Mee });
               }}
             >

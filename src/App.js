@@ -19,7 +19,8 @@ function App() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [productImage, setProductImage] = useState("");
-  const [productPrice, setProductPrice] = useState("");
+  const [productPrice, setProductPrice] = useState(0);
+  const [total, setTotal] = useState(0);
   const [CartNo, SetCartNo] = useState(0);
   const [CartItems, SetCartItems] = useState([{}]);
   return (
@@ -37,6 +38,8 @@ function App() {
         setProductImage,
         productPrice,
         setProductPrice,
+        total,
+        setTotal,
       }}
     >
       <UserContext.Provider

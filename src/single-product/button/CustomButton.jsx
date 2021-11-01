@@ -10,6 +10,8 @@ const CustomButton = (props) => {
     SetCartNo,
     SetCartItems,
     CartItems,
+    setTotal,
+    total,
   } = useContext(CartContext);
 
   return (
@@ -18,6 +20,7 @@ const CustomButton = (props) => {
       onClick={() => {
         SetCartNo(CartNo + 1);
         SetCartItems([...CartItems, { title, productPrice, productImage }]);
+        setTotal(total + productPrice);
       }}
     >
       <div variant="contained" disableElevation className={classes.button}>
