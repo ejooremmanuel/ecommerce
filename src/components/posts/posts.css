@@ -24,10 +24,14 @@
 .post {
     display: grid;
     /* grid-template-columns: repeat(auto-fill,minmax(160px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "first__post second__post third__post";
+    grid-template-columns: 1fr 1fr;
     /* grid-gap: 5px; */
     margin: 2px auto;
     padding: 0 10rem;
+}
+.text {
+    margin-top: 10px;
 }
 
 .first__post img, .second__post img, .third__post img{
@@ -66,10 +70,10 @@
     align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 854px) {
     .post{
         grid-template-areas: "first__post second__post"
-                             "third__post";
+                                    "third__post" !important;
     }
     
 }
