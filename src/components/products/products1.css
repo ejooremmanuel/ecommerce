@@ -114,7 +114,7 @@ img {
     text-indent: 70px;
 }
 
-@media screen and (max-width: 854px) {
+@media screen and (max-width: 1033px) {
     .product-container{
         grid-template-areas: "item1 item2"
                             "item1 item4"
@@ -123,7 +123,7 @@ img {
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 751px) {
     .product-container{
         grid-template-areas:    "item1"
                                 "item2"

@@ -1,2 +1,41 @@
 .bannerdisplayimage {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 30px auto;
+}
+
+.bannerdisplay-image {
+  width: "400px";
+  height: "450px";
+  flex: 1;
+}
+.bannerdisplay-image img {
+  width: "300px";
+  height: "350px";
+}
+
+.bannerText {
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .bannerdisplayimage {
+    flex-direction: column !important;
+  }
+  .bannerdisplayimage img {
+    width: "200px" !important;
+    height: "250px" !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerdisplayimage {
+    flex-direction: column !important;
+  }
+  .bannerdisplayimage img {
+    width: "300px";
+    height: "350px";
+  }
 }

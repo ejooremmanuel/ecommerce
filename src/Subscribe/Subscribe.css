@@ -1,0 +1,27 @@
+.subscribe-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 30px auto 0 auto;
+  gap: 16em;
+}
+.subscribe-text {
+  flex: 1;
+}
+
+.subscribe-search {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-container {
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .subscribe-text {
+    display: none;
+  }
+  .subscribe-search {
+    width: 80%;
+  }
+}
