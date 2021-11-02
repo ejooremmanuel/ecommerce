@@ -1,7 +1,7 @@
 import React from "react";
-import MenuBar from "../Menubar/MenuBar";
+import MenuBar from "../home/Menubar/MenuBar";
 import "./Landing.css";
-import Footerbar from "../Footerbar/Footerbar";
+import Footerbar from "../home/Footerbar/Footerbar";
 
 const Wrapper = ({ children }) => {
   return (

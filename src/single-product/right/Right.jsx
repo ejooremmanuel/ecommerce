@@ -19,7 +19,7 @@ const Right = () => {
           </div>
         </div>
         <div className={classes.productPrice}>
-          <span>&nbsp;{productPrice}</span>
+          <span>&nbsp;&#x24;{productPrice}</span>
         </div>
         <div className={classes.colorSection}>
           <h4 className={classes.colorHeading}>Colors</h4>

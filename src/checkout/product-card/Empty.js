@@ -21,7 +21,7 @@ const Empty = () => {
         alignItems: "center",
         justifyContent: "center",
         gap: "2em",
-        marginTop: "40px",
+        marginTop: "150px",
         width: "100%",
       }}
     >

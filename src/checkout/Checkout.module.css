@@ -8,6 +8,7 @@
 .productsCon {
   padding-top: 150px;
   flex: 2;
+  height: 100vh;
 }
 .sectionHeader {
   font-weight: 900;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "semantic-ui-css/semantic.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./HomePage/HomePage";
@@ -22,11 +22,15 @@ function App() {
   const [productImage, setProductImage] = useState("");
   const [productPrice, setProductPrice] = useState(0);
   const [total, setTotal] = useState(0);
-  const [CartNo, SetCartNo] = useState(0);
-  const [CartItems, SetCartItems] = useState([{}]);
+  const [CartNo, SetCartNo] = useState(null);
+  const [CartItems, SetCartItems] = useState([]);
+  const [productId, setProductId] = useState();
+  const [count, setCount] = useState(1);
   return (
     <CartContext.Provider
       value={{
+        count,
+        setCount,
         title,
         CartNo,
         SetCartNo,
@@ -41,6 +45,8 @@ function App() {
         setProductPrice,
         total,
         setTotal,
+        productId,
+        setProductId,
       }}
     >
       <UserContext.Provider

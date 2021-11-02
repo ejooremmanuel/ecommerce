@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import paystack from '../../assets/img/paystack.png'
+import paystack from "../../assets/img/paystack.png";
+import Wrapper from "../../Landing/Landing";
 import classes from "./CheckoutRight.module.css";
+import { CartContext } from "../../context/CartContext";
 
 const CheckoutRight = () => {
+  const { total } = useContext(CartContext);
   const [paymentMethod, setPaymentMethod] = useState("online");
 
   const handleSelectPaymentMethod = (e) => {
@@ -15,7 +18,8 @@ const CheckoutRight = () => {
     console.log(paymentMethod);
   };
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{ position: "fixed", top: 0 }}>
+      <h4>Total: &#x24; {total}</h4>
       <h2 className={classes.sectionHeader}>PAYMENT</h2>
       <FormControl component="fieldset">
         <RadioGroup
@@ -37,6 +41,7 @@ const CheckoutRight = () => {
           />
         </RadioGroup>
       </FormControl>
+
       <div className={classes.paystack}>
         <span>Checkout &nbsp; &#8594;</span>
       </div>

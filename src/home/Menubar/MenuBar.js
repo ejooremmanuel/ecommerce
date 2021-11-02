@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Input, Icon } from "semantic-ui-react";
 import "./Menubar.css";
 import { Link } from "react-router-dom";
-import CartIcon from "./ShoppingCartIcon";
+import CartIcon from "../../Menubar/ShoppingCartIcon";
 const MenuBar = () => {
   const [show, setShow] = useState(true);
   const [menu, setMenu] = useState(true);
