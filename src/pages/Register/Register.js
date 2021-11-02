@@ -42,7 +42,9 @@ export default function Register() {
           history.push("/user/verify");
         }, 3000);
       }
+      console.log(res);
     } catch (err) {
+      console.log(err);
       setNewm(false);
       if (!err.response.data.success) {
         setError(err.response.data.msg);
