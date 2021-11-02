@@ -37,16 +37,16 @@ export default function Register() {
       );
 
       if (res.data.success) {
+        setError("");
         setSuccess(res.data.msg);
         setTimeout(() => {
           history.push("/user/verify");
         }, 3000);
       }
-      console.log(res);
     } catch (err) {
-      console.log(err);
       setNewm(false);
       if (!err.response.data.success) {
+        setSuccess("");
         setError(err.response.data.msg);
       }
     }
