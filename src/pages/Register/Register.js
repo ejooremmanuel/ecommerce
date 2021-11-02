@@ -39,9 +39,7 @@ export default function Register() {
       if (res.data.success) {
         setError("");
         setSuccess(res.data.msg);
-        setTimeout(() => {
-          history.push("/user/verify");
-        }, 3000);
+        history.push("/user/verify");
       }
     } catch (err) {
       setNewm(false);
