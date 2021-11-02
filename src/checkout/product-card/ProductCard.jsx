@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import classes from "./ProductCard.module.css";
 import { CartContext } from "../../context/CartContext";
 import Empty from "./Empty";
-import Wrapper from "../../Landing/Landing";
 const ProductCard = () => {
   const { CartItems, total, SetCartNo, CartNo, setTotal } =
     useContext(CartContext);
