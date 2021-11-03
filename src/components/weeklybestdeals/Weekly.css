@@ -1,11 +1,14 @@
 .container {
   width: 80%;
   height: 100%;
-  margin: 60px auto;
+  margin: 25px auto;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-column-gap: 50px;
+  grid-template-columns: 280px 280px 280px;
+  grid-column-gap: 20px;
   grid-gap: 10px;
+  align-items: "center";
+  justify-content: "center";
+ 
 }
 
 .container a {
@@ -34,10 +37,10 @@
 }
 .lastpart {
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
   align-self: flex-start;
   justify-content: center;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 .firstprice {
   text-decoration: line-through;
@@ -71,10 +74,10 @@
 }
 
 .weekly {
-  /* margin-left: 260px; */
+  margin-left: 130px;
 }
 .shop-1 {
-  width: 250px;
+  width: 280px;
   height: 300px;
   /* border: 2px solid; */
   display: flex;
@@ -97,7 +100,7 @@
 }
 .intro__img {
   height: 180px;
-  width: 250px;
+  width: 300px;
   background-color: rgb(197, 195, 192);
   align-items: center;
 }
@@ -105,7 +108,7 @@
   display: flex;
   /* flex-direction: column; */
   background-color: rgb(5, 5, 32);
-  width: 70%;
+  width: 75%;
   height: 100%;
   margin: 10px auto;
   /* margin-top: 50px;
